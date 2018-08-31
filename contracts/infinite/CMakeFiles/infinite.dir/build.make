@@ -63,7 +63,7 @@ contracts/infinite/infinite.wast.hpp: contracts/infinite/infinite.wast
 	cd /home/eos-n1/eos/build/contracts/infinite && cat /home/eos-n1/eos/build/contracts/infinite/infinite.wast >> /home/eos-n1/eos/build/contracts/infinite/infinite.wast.hpp
 	cd /home/eos-n1/eos/build/contracts/infinite && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/infinite/infinite.wast.hpp
 
-contracts/infinite/infinite.wasm: contracts/infinite/infinite.wast.hpp
+contracts/infinite/infinite.wasm: contracts/infinite/infinite.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating WASM infinite.wasm"
 	cd /home/eos-n1/eos/build/contracts/infinite && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/infinite/infinite.wast /home/eos-n1/eos/build/contracts/infinite/infinite.wasm -n
 

@@ -3,7 +3,7 @@ cmake_minimum_required( VERSION 3.5 )
 set(CMAKE_CXX_COMPILER /usr/bin/clang++-4.0)
 set(CMAKE_C_COMPILER   /usr/bin/clang-4.0)
 
-set(EOSIO_VERSION "1.2.1")
+set(EOSIO_VERSION "1.2.3")
 
 enable_testing()
 

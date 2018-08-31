@@ -63,7 +63,7 @@ contracts/test_api/test_api.wast.hpp: contracts/test_api/test_api.wast
 	cd /home/eos-n1/eos/build/contracts/test_api && cat /home/eos-n1/eos/build/contracts/test_api/test_api.wast >> /home/eos-n1/eos/build/contracts/test_api/test_api.wast.hpp
 	cd /home/eos-n1/eos/build/contracts/test_api && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/test_api/test_api.wast.hpp
 
-contracts/test_api/test_api.wasm: contracts/test_api/test_api.wast.hpp
+contracts/test_api/test_api.wasm: contracts/test_api/test_api.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating WASM test_api.wasm"
 	cd /home/eos-n1/eos/build/contracts/test_api && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/test_api/test_api.wast /home/eos-n1/eos/build/contracts/test_api/test_api.wasm -n
 

@@ -63,7 +63,7 @@ contracts/test_api_mem/test_api_mem.wast.hpp: contracts/test_api_mem/test_api_me
 	cd /home/eos-n1/eos/build/contracts/test_api_mem && cat /home/eos-n1/eos/build/contracts/test_api_mem/test_api_mem.wast >> /home/eos-n1/eos/build/contracts/test_api_mem/test_api_mem.wast.hpp
 	cd /home/eos-n1/eos/build/contracts/test_api_mem && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/test_api_mem/test_api_mem.wast.hpp
 
-contracts/test_api_mem/test_api_mem.wasm: contracts/test_api_mem/test_api_mem.wast.hpp
+contracts/test_api_mem/test_api_mem.wasm: contracts/test_api_mem/test_api_mem.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating WASM test_api_mem.wasm"
 	cd /home/eos-n1/eos/build/contracts/test_api_mem && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/test_api_mem/test_api_mem.wast /home/eos-n1/eos/build/contracts/test_api_mem/test_api_mem.wasm -n
 

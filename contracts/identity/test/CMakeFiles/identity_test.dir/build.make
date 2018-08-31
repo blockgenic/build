@@ -70,7 +70,7 @@ contracts/identity/test/identity_test.abi.hpp: contracts/identity/test/identity_
 	cd /home/eos-n1/eos/build/contracts/identity/test && cat /home/eos-n1/eos/build/contracts/identity/test/identity_test.abi >> /home/eos-n1/eos/build/contracts/identity/test/identity_test.abi.hpp
 	cd /home/eos-n1/eos/build/contracts/identity/test && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/identity/test/identity_test.abi.hpp
 
-contracts/identity/test/identity_test.wasm: contracts/identity/test/identity_test.wast.hpp
+contracts/identity/test/identity_test.wasm: contracts/identity/test/identity_test.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM identity_test.wasm"
 	cd /home/eos-n1/eos/build/contracts/identity/test && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/identity/test/identity_test.wast /home/eos-n1/eos/build/contracts/identity/test/identity_test.wasm -n
 

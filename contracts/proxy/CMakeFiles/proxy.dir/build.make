@@ -70,7 +70,7 @@ contracts/proxy/proxy.abi.hpp: contracts/proxy/proxy.abi
 	cd /home/eos-n1/eos/build/contracts/proxy && cat /home/eos-n1/eos/build/contracts/proxy/proxy.abi >> /home/eos-n1/eos/build/contracts/proxy/proxy.abi.hpp
 	cd /home/eos-n1/eos/build/contracts/proxy && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/proxy/proxy.abi.hpp
 
-contracts/proxy/proxy.wasm: contracts/proxy/proxy.wast.hpp
+contracts/proxy/proxy.wasm: contracts/proxy/proxy.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM proxy.wasm"
 	cd /home/eos-n1/eos/build/contracts/proxy && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/proxy/proxy.wast /home/eos-n1/eos/build/contracts/proxy/proxy.wasm -n
 

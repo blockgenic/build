@@ -112,6 +112,7 @@ function generate_abi {
     ${ABIGEN} -extra-arg=-c -extra-arg=--std=c++14 -extra-arg=--target=wasm32 \
         -extra-arg=-nostdinc -extra-arg=-nostdinc++ -extra-arg=-DABIGEN \
         -extra-arg=-I/home/eos-n1/eos/contracts \
+        -extra-arg=-I/home/eos-n1/eos/build/contracts \
         -extra-arg=-I/home/eos-n1/eos/contracts/libc++/upstream/include \
         -extra-arg=-I/home/eos-n1/eos/contracts/musl/upstream/include \
         -extra-arg=-I/home/eos-n1/eos/externals/magic_get/include \

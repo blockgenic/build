@@ -70,7 +70,7 @@ contracts/noop/noop.abi.hpp: contracts/noop/noop.abi
 	cd /home/eos-n1/eos/build/contracts/noop && cat /home/eos-n1/eos/build/contracts/noop/noop.abi >> /home/eos-n1/eos/build/contracts/noop/noop.abi.hpp
 	cd /home/eos-n1/eos/build/contracts/noop && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/noop/noop.abi.hpp
 
-contracts/noop/noop.wasm: contracts/noop/noop.wast.hpp
+contracts/noop/noop.wasm: contracts/noop/noop.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM noop.wasm"
 	cd /home/eos-n1/eos/build/contracts/noop && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/noop/noop.wast /home/eos-n1/eos/build/contracts/noop/noop.wasm -n
 

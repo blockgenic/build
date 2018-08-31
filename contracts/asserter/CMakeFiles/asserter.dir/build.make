@@ -70,7 +70,7 @@ contracts/asserter/asserter.abi.hpp: contracts/asserter/asserter.abi
 	cd /home/eos-n1/eos/build/contracts/asserter && cat /home/eos-n1/eos/build/contracts/asserter/asserter.abi >> /home/eos-n1/eos/build/contracts/asserter/asserter.abi.hpp
 	cd /home/eos-n1/eos/build/contracts/asserter && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/asserter/asserter.abi.hpp
 
-contracts/asserter/asserter.wasm: contracts/asserter/asserter.wast.hpp
+contracts/asserter/asserter.wasm: contracts/asserter/asserter.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM asserter.wasm"
 	cd /home/eos-n1/eos/build/contracts/asserter && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/asserter/asserter.wast /home/eos-n1/eos/build/contracts/asserter/asserter.wasm -n
 

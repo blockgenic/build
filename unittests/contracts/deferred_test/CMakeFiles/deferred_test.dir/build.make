@@ -70,7 +70,7 @@ unittests/contracts/deferred_test/deferred_test.abi.hpp: unittests/contracts/def
 	cd /home/eos-n1/eos/build/unittests/contracts/deferred_test && cat /home/eos-n1/eos/build/unittests/contracts/deferred_test/deferred_test.abi >> /home/eos-n1/eos/build/unittests/contracts/deferred_test/deferred_test.abi.hpp
 	cd /home/eos-n1/eos/build/unittests/contracts/deferred_test && echo ")=====\";" >> /home/eos-n1/eos/build/unittests/contracts/deferred_test/deferred_test.abi.hpp
 
-unittests/contracts/deferred_test/deferred_test.wasm: unittests/contracts/deferred_test/deferred_test.wast.hpp
+unittests/contracts/deferred_test/deferred_test.wasm: unittests/contracts/deferred_test/deferred_test.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM deferred_test.wasm"
 	cd /home/eos-n1/eos/build/unittests/contracts/deferred_test && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/unittests/contracts/deferred_test/deferred_test.wast /home/eos-n1/eos/build/unittests/contracts/deferred_test/deferred_test.wasm -n
 

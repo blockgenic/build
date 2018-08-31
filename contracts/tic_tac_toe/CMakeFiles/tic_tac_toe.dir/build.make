@@ -70,7 +70,7 @@ contracts/tic_tac_toe/tic_tac_toe.abi.hpp: contracts/tic_tac_toe/tic_tac_toe.abi
 	cd /home/eos-n1/eos/build/contracts/tic_tac_toe && cat /home/eos-n1/eos/build/contracts/tic_tac_toe/tic_tac_toe.abi >> /home/eos-n1/eos/build/contracts/tic_tac_toe/tic_tac_toe.abi.hpp
 	cd /home/eos-n1/eos/build/contracts/tic_tac_toe && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/tic_tac_toe/tic_tac_toe.abi.hpp
 
-contracts/tic_tac_toe/tic_tac_toe.wasm: contracts/tic_tac_toe/tic_tac_toe.wast.hpp
+contracts/tic_tac_toe/tic_tac_toe.wasm: contracts/tic_tac_toe/tic_tac_toe.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM tic_tac_toe.wasm"
 	cd /home/eos-n1/eos/build/contracts/tic_tac_toe && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/tic_tac_toe/tic_tac_toe.wast /home/eos-n1/eos/build/contracts/tic_tac_toe/tic_tac_toe.wasm -n
 

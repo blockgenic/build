@@ -70,7 +70,7 @@ contracts/identity/identity.abi.hpp: contracts/identity/identity.abi
 	cd /home/eos-n1/eos/build/contracts/identity && cat /home/eos-n1/eos/build/contracts/identity/identity.abi >> /home/eos-n1/eos/build/contracts/identity/identity.abi.hpp
 	cd /home/eos-n1/eos/build/contracts/identity && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/identity/identity.abi.hpp
 
-contracts/identity/identity.wasm: contracts/identity/identity.wast.hpp
+contracts/identity/identity.wasm: contracts/identity/identity.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM identity.wasm"
 	cd /home/eos-n1/eos/build/contracts/identity && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/identity/identity.wast /home/eos-n1/eos/build/contracts/identity/identity.wasm -n
 

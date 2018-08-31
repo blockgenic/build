@@ -70,7 +70,7 @@ contracts/payloadless/payloadless.abi.hpp: contracts/payloadless/payloadless.abi
 	cd /home/eos-n1/eos/build/contracts/payloadless && cat /home/eos-n1/eos/build/contracts/payloadless/payloadless.abi >> /home/eos-n1/eos/build/contracts/payloadless/payloadless.abi.hpp
 	cd /home/eos-n1/eos/build/contracts/payloadless && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/payloadless/payloadless.abi.hpp
 
-contracts/payloadless/payloadless.wasm: contracts/payloadless/payloadless.wast.hpp
+contracts/payloadless/payloadless.wasm: contracts/payloadless/payloadless.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM payloadless.wasm"
 	cd /home/eos-n1/eos/build/contracts/payloadless && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/payloadless/payloadless.wast /home/eos-n1/eos/build/contracts/payloadless/payloadless.wasm -n
 

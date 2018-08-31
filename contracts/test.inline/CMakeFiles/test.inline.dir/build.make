@@ -70,7 +70,7 @@ contracts/test.inline/test.inline.abi.hpp: contracts/test.inline/test.inline.abi
 	cd /home/eos-n1/eos/build/contracts/test.inline && cat /home/eos-n1/eos/build/contracts/test.inline/test.inline.abi >> /home/eos-n1/eos/build/contracts/test.inline/test.inline.abi.hpp
 	cd /home/eos-n1/eos/build/contracts/test.inline && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/test.inline/test.inline.abi.hpp
 
-contracts/test.inline/test.inline.wasm: contracts/test.inline/test.inline.wast.hpp
+contracts/test.inline/test.inline.wasm: contracts/test.inline/test.inline.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM test.inline.wasm"
 	cd /home/eos-n1/eos/build/contracts/test.inline && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/test.inline/test.inline.wast /home/eos-n1/eos/build/contracts/test.inline/test.inline.wasm -n
 

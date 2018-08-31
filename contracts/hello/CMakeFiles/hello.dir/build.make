@@ -70,7 +70,7 @@ contracts/hello/hello.abi.hpp: contracts/hello/hello.abi
 	cd /home/eos-n1/eos/build/contracts/hello && cat /home/eos-n1/eos/build/contracts/hello/hello.abi >> /home/eos-n1/eos/build/contracts/hello/hello.abi.hpp
 	cd /home/eos-n1/eos/build/contracts/hello && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/hello/hello.abi.hpp
 
-contracts/hello/hello.wasm: contracts/hello/hello.wast.hpp
+contracts/hello/hello.wasm: contracts/hello/hello.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM hello.wasm"
 	cd /home/eos-n1/eos/build/contracts/hello && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/hello/hello.wast /home/eos-n1/eos/build/contracts/hello/hello.wasm -n
 

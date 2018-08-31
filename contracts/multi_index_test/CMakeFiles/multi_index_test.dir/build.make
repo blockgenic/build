@@ -70,7 +70,7 @@ contracts/multi_index_test/multi_index_test.abi.hpp: contracts/multi_index_test/
 	cd /home/eos-n1/eos/build/contracts/multi_index_test && cat /home/eos-n1/eos/build/contracts/multi_index_test/multi_index_test.abi >> /home/eos-n1/eos/build/contracts/multi_index_test/multi_index_test.abi.hpp
 	cd /home/eos-n1/eos/build/contracts/multi_index_test && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/multi_index_test/multi_index_test.abi.hpp
 
-contracts/multi_index_test/multi_index_test.wasm: contracts/multi_index_test/multi_index_test.wast.hpp
+contracts/multi_index_test/multi_index_test.wasm: contracts/multi_index_test/multi_index_test.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM multi_index_test.wasm"
 	cd /home/eos-n1/eos/build/contracts/multi_index_test && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/multi_index_test/multi_index_test.wast /home/eos-n1/eos/build/contracts/multi_index_test/multi_index_test.wasm -n
 

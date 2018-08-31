@@ -70,7 +70,7 @@ contracts/eosio.msig/eosio.msig.abi.hpp: contracts/eosio.msig/eosio.msig.abi
 	cd /home/eos-n1/eos/build/contracts/eosio.msig && cat /home/eos-n1/eos/build/contracts/eosio.msig/eosio.msig.abi >> /home/eos-n1/eos/build/contracts/eosio.msig/eosio.msig.abi.hpp
 	cd /home/eos-n1/eos/build/contracts/eosio.msig && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/eosio.msig/eosio.msig.abi.hpp
 
-contracts/eosio.msig/eosio.msig.wasm: contracts/eosio.msig/eosio.msig.wast.hpp
+contracts/eosio.msig/eosio.msig.wasm: contracts/eosio.msig/eosio.msig.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM eosio.msig.wasm"
 	cd /home/eos-n1/eos/build/contracts/eosio.msig && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/eosio.msig/eosio.msig.wast /home/eos-n1/eos/build/contracts/eosio.msig/eosio.msig.wasm -n
 

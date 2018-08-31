@@ -70,7 +70,7 @@ contracts/integration_test/integration_test.abi.hpp: contracts/integration_test/
 	cd /home/eos-n1/eos/build/contracts/integration_test && cat /home/eos-n1/eos/build/contracts/integration_test/integration_test.abi >> /home/eos-n1/eos/build/contracts/integration_test/integration_test.abi.hpp
 	cd /home/eos-n1/eos/build/contracts/integration_test && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/integration_test/integration_test.abi.hpp
 
-contracts/integration_test/integration_test.wasm: contracts/integration_test/integration_test.wast.hpp
+contracts/integration_test/integration_test.wasm: contracts/integration_test/integration_test.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM integration_test.wasm"
 	cd /home/eos-n1/eos/build/contracts/integration_test && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/integration_test/integration_test.wast /home/eos-n1/eos/build/contracts/integration_test/integration_test.wasm -n
 

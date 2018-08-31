@@ -5,7 +5,7 @@
  */
 
 namespace eosio { namespace client { namespace config {
-   constexpr char version_str[] = "bf28f8bb";
+   constexpr char version_str[] = "e87d245d";
    constexpr char locale_path[] = "/usr/local/eosio/share/locale";
    constexpr char locale_domain[] = "cleos";
    constexpr char key_store_executable_name[] = "keosd";

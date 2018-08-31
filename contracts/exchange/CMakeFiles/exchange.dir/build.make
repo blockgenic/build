@@ -70,7 +70,7 @@ contracts/exchange/exchange.abi.hpp: contracts/exchange/exchange.abi
 	cd /home/eos-n1/eos/build/contracts/exchange && cat /home/eos-n1/eos/build/contracts/exchange/exchange.abi >> /home/eos-n1/eos/build/contracts/exchange/exchange.abi.hpp
 	cd /home/eos-n1/eos/build/contracts/exchange && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/exchange/exchange.abi.hpp
 
-contracts/exchange/exchange.wasm: contracts/exchange/exchange.wast.hpp
+contracts/exchange/exchange.wasm: contracts/exchange/exchange.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM exchange.wasm"
 	cd /home/eos-n1/eos/build/contracts/exchange && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/exchange/exchange.wast /home/eos-n1/eos/build/contracts/exchange/exchange.wasm -n
 

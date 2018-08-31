@@ -70,7 +70,7 @@ contracts/eosio.token/eosio.token.abi.hpp: contracts/eosio.token/eosio.token.abi
 	cd /home/eos-n1/eos/build/contracts/eosio.token && cat /home/eos-n1/eos/build/contracts/eosio.token/eosio.token.abi >> /home/eos-n1/eos/build/contracts/eosio.token/eosio.token.abi.hpp
 	cd /home/eos-n1/eos/build/contracts/eosio.token && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/eosio.token/eosio.token.abi.hpp
 
-contracts/eosio.token/eosio.token.wasm: contracts/eosio.token/eosio.token.wast.hpp
+contracts/eosio.token/eosio.token.wasm: contracts/eosio.token/eosio.token.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM eosio.token.wasm"
 	cd /home/eos-n1/eos/build/contracts/eosio.token && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/eosio.token/eosio.token.wast /home/eos-n1/eos/build/contracts/eosio.token/eosio.token.wasm -n
 

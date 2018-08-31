@@ -70,7 +70,7 @@ contracts/dice/dice.abi.hpp: contracts/dice/dice.abi
 	cd /home/eos-n1/eos/build/contracts/dice && cat /home/eos-n1/eos/build/contracts/dice/dice.abi >> /home/eos-n1/eos/build/contracts/dice/dice.abi.hpp
 	cd /home/eos-n1/eos/build/contracts/dice && echo ")=====\";" >> /home/eos-n1/eos/build/contracts/dice/dice.abi.hpp
 
-contracts/dice/dice.wasm: contracts/dice/dice.wast.hpp
+contracts/dice/dice.wasm: contracts/dice/dice.wast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/eos-n1/eos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating WASM dice.wasm"
 	cd /home/eos-n1/eos/build/contracts/dice && /home/eos-n1/eos/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm /home/eos-n1/eos/build/contracts/dice/dice.wast /home/eos-n1/eos/build/contracts/dice/dice.wasm -n
 
